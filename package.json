@@ -11,7 +11,8 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "ethereumjs-tx": "^2.1.2",
+    "@ethereumjs/common": "^10.0.0",
+    "@ethereumjs/tx": "^10.0.0",
     "web3": "^4.16.0"
   }
 }

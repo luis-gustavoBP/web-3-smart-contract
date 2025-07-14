@@ -1,6 +1,6 @@
 import Web3 from 'web3';
 
-const url = "https://mainnet.infura.io/v3/6a81b7066a6349c286d29a3d1e060a8f";
+const url = "";
 
 const web3 = new Web3(url);
 
@@ -616,7 +616,7 @@ const ABI = [
         "type": "event"
     }
 ]
-const contractAddress = '0xdAC17F958D2ee523a2206206994597C13D831ec7';
+const contractAddress = '';
 
 const tetherContract = new web3.eth.Contract(ABI, contractAddress);
 
@@ -628,7 +628,7 @@ const dapp = async () => {
     const name = await tetherContract.methods.name().call();
     const symbol = await tetherContract.methods.symbol().call();
     console.log(name, symbol);
-    const holder = '0xF977814e90dA44bFA03b6295A0616a897441aceC'
+    const holder = ''
     const balance = await tetherContract.methods.balanceOf(holder).call();
     console.log(balance);
 }
